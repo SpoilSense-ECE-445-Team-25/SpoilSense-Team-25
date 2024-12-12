@@ -32,18 +32,56 @@ Week 10/7
 - Design review of initial PCB
 -> might need to test with other VOC Sensor
 -> use through hole LED instead of multicolor LED
--> need to find right footprint of ESP32 and complete schematic for ESP32
+-> need to find right footprint of ESP32 and complete schematic for ESP32 - getting from TA
 
 Week: 10/14
+- researching different ethylene sensor but hard to find reasonably priced/appropriate one for our application
 - PCB development being done, trying to help where I can
 - Started writing code for micrcontroller, having difficulties with serial monitor connection
-- 
+- scrapping temp and relative humidity monitoring
+- PCB development is taking a bit of time, need to ask help from TA/friends
+
 Week: 10/21
+- having trouble with finding footprints for certain components
+- CFOP num so we can start ordering other parts
+- Ethylene sensor not showing up in time, BME testing going on
+- finalized and submitted PCB for 3rd round order
+
 Week: 10/28
+- got serial monitor to work for ESP on Arduino IDE
+- conducting tests with BME680 in testing environment but to no avail
+- found MICS 5524 VOC sensor with detect methane, ethanol, ammonia, carbon monoxide
+-  orderd MICS 5524 breakout board for testing
+- Set up meeting with TA for PCB help
+
 
 Week: 11/4
+- Found library for MICS 5524, developing testing program for ESP
+- Need to conduct tests for threshold for spoilage detection
+- Fixed Design Doc and submitted for regrade
+- 1st iteration PCB came in, missing a lot of things like power and programming interace for ESP
+- Need to make necessary changes
+
 Week: 11/11
+- conducting tests for MICs 5524 sensor, seems to be able to detect CH4 and NH3 pretty well with some inconsistencies
+- Finalizing 2nd iteration of PCB, added power distribution and flashing interface
+- signed up for Demo/presentation
+- threshold found at 3000 for CH4 and 50 for NH3
+- wriitng program to set up client-server architecture for external and internal modules respectively
+
 Week: 11/18
+- BLE communication works and LED is on when threshold is reached
+- Had mock demo with TA, demonstrated working protoype on breadboard
+- put in order for new PCB, should be here after break so we can solder and test before final demo
 
 Week: 12/2
+- PCB lost in transit, had to do final demo with breadboard prototype
+- Began working on presentation slides and speaker notes
+- finalized how we will divide presentation
+- had mock presentation, got good feedback, need to work on delivery of presentation and add R and V information
+
 Week: 12/9
+- completed final presentation
+- working on final paper, mostly just expanding on speaker notes from presentation 
+- getting ready for lab clean up
+- submited final paper, added all info, looked at past ones for reference in format/organization, including all relevant details from developing SpoilSense
