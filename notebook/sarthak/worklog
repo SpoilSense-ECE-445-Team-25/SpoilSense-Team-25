@@ -1,4 +1,4 @@
-Week 1 - 9/30
+Week of 9/30
 This week the objective was to continue finalizing our design doc and get started on a schematic. 
 We are still struggling a bit figuring out what our sub systems will look but we had a basic idea at the beginning of the week.
 --> Mon - Wed
@@ -14,7 +14,7 @@ Also secured our high level requirements that we will work towards when developi
 at most dimensions of  5 in x 4 in x 2 in. 
 3. The system must respond to detected ethylene gas concentration changes and trigger an alert within 30 seconds of the threshold being met.
 
-Week 2 - 10/7
+Week of 10/7
 Goal is to get ready for the design review and explain the relative design we want to implement as well get help/feedback from TAs at the
 PCB review.
 We are continuing to build the schematic for our CAD model but need help setting up the corrrect ESP.
@@ -29,7 +29,7 @@ Got a lot of feedback from PCB Review:
 -Look into using through hole LEDs for the external module may be easier 
 -Given an outline on what an ESP should look like including the USB to flash it as well as debugging tools
 
-Week 3 - 10/14
+Week of 10/14
 Make progress on the schmeatic adn try to get an order in on PCBway by the first order deadline. Also, test get VOC sensor and utilize
 ESP devkit in order to try to get data readings for the sensor 
 --> Mon - Wed
@@ -42,7 +42,7 @@ Got necessary VOC sensor devboard for testing.
 Soldered parts together in order to use on the breadboard.
 Attempted to configure ESP devkit with arduino IDE in order to get sensor readings to output.
 
-Week 4 - 10/21
+Week of 10/21
 Continue testing with devkit
 Order necessart parts for PCB and get CAD model working and able to order.
 --> Mon - Wed
@@ -53,5 +53,64 @@ Still struggling with footprints, not able to find ones that are viable and have
 Also having issues with software, importing necessary parts are not working
 Will continue to work, try to order in next round. 
 
-Week 5 - 10/28
+Week of 10/28
+Goal is to get a PCB that is fully done and able to be ordered. Also need to find different sensor because BME is not fully working
+the way we want it to.
+--> Mon - Wed
+Got help from TA to try and complete the ESP schematic along with power supply and external alerts
+He showed us an example ESP schematic and what the minimum things we need in order for it to work
+We will go off of that and try to base our PCB off of that.
+--> Thurs - Fri
+Were able to get serial readings from the BME sensor but readings werent useful for detecting spoilage.
+Understand how to get the code working to sense the gases, just need to get the right sensor that is able to sense when spoilage 
+has happened. 
+
+Week of 11/4
+Begin trying to solder first iteration of PCB and test with new breakout board in order to set the necessary thresholds for 
+high level requirements.
+--> Mon - Wed
+PCB missing many parts, including a way to give power to the entire PCB, so we will have to redesign and order again.
+--> Thurs - Fri
+Began testing with the new sensor which senses for Methane and Ammonia, which is a better indicator of spoilage
+Working soldering and setting up this VOC sensor and testing with breadboard.
+Resubmitted design doc with refined requirements and information on subsystems.
+
+Week of 11/11
+Make new iteration of PCB for reordering and figure out necessary thresholds for spoilage
+--> Mon - Wed
+Trying to redesign the PCB, including a way to distribute the power and actually flash the microcontroller.
+Having trouble passing DRC, traces are not cooperating and may have to pick new ESP without holes in the middle of it because it is 
+causing problems.
+--> Thurs - Fri
+Tested with the breakout board and found spoilage thresholds of 3000 for CH4 and 50 for NH3, so we will use this to detect spoilage
+Signed up for demo/presentation
+Starting to look into BLE communication based on a server/client implementation. 
+
+Week of 11/18
+Demonstrate what we have with TA, work towards getting functionality on the PCB and confrim BLE communication on breadboard for leaving
+for break
+--> Mon - Wed
+Put in a new order for PCB (LOL), did not have adequate parts for powering board, will try to get external module soldered.
+Demonstrated what we have on the breadboard to the TA.
+--> Thurs - Fri
+Got BLE communication working, can connect to the server and receive alerts from it.
+It is also able to receive this alert and then make an action based on it, in our case lighting up the on chip LED.
+
+Week of 12/2
+Get some sort of functionality on the PCB to show furing the demo and also prepare for final presentation
+--> Mon - Wed
+PCB got lost in transit, unable to attempt with our final design of the PCB
+Had to demo with the breadboard in order to show them proof of our concept 
+--> Thurs - Fri
+Worked on final presentation slides and practiced a few times with team, splitting up presentation planning who will say what
+Had mock presentation got feedback on our delivery and slides
+
+Week of 12/9
+Do a good job on final presentation and write the final paper
+--> Mon - Wed
+Finished the final presentation 
+Worked on finishing the final presentation 
+--> Thurs - Fri
+Clean up lab space 
+
 
