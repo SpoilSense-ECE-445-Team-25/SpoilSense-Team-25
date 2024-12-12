@@ -1,0 +1,75 @@
+# Azim Shad Work Log
+
+Week of 9/2: Brainstorming Ideas
+Think of final project ideas: food spoilage detecter, morning routine device, smart mirror
+Brainstorm working solutions for each of these ideas to gauge the interest and feasibility of project
+
+Week of 9/9: Project Selection and Approval
+Decide to pursue the food spoilage detector idea
+Design will include various sensors to monitor moisture, temp, humididty, and various gases
+There will be an alert system to alert user of spoilage
+Completed RFA approval with team
+
+Week of 9/16: Planning and Enclosure Design
+Talk with the TA to go over the RFA requirements and an understanding of the proposal
+Begin working on an idea for the enclosure that will house the internal and external modules
+Named the project Spoil Sense
+Azim meets with the TA to clarify RFA requirements and the proposal process. He consults Gregg about potential enclosure designs for the food freshness detector, now named "SpoilSense."
+
+Week of 9/30: Design Document and Sensor Orders
+Worked on Design document
+Ordered ethylene sesnsor
+Met with TA over PCB design and understanding how to build the schematic with all the neccessary componenents
+
+Week of 10/7: Addressing Design Review Feedback
+Waiting for sensor to arrive
+Considering a pivot to new sensor because cannot begin testing since ethylene sensor will take too long to arrive
+Design review for initial PCB design
+Switch design from SMD LEDs to throughole LEDs
+
+Week of 10/14: PCB and Microcontroller Development
+Working on PCB design facing various issues with footprint and challenges using KiKad
+Cannot find footprint for ethylene sensor, seriously considering pivoting to a new sensor
+Pivoting off of tempearture and humidity sensors as they don't really help detect spoilage
+
+Week of 10/21: PCB Design and BME680 Testing
+Encountering issues with PCB footprints
+Confirming parts for PCB orders
+Pivoted to BME680 sensor because it is another VOC sensor and ethylene sensor still has not arrived
+Started testing for BME680 sensor
+Finalized and ordered PCB with BME680 sensor
+
+Week of 10/28: Progress with Microcontroller and Sensors
+BME680 sensor testing is not going as planned, started looking into other sensors for better spoilage detection
+Update PCB Design to include MICS-5524 VOC sensor to detect methane and ammonia 
+Ordered MICS-5524 VOC sensor
+
+Week of 11/4: Sensor Testing and PCB Revisions
+Sensor testing with MICS-5524 VOC sensor in a controlled environment
+Collect data of various foods and aggregate them together to find a baseline threshold to use to detect spoilage
+Updated design doc and resubmitted for grading
+1st PCB order arrives
+Need to reorder because there is a missing power supply and the wrong sensor
+
+Week of 11/11: Finalizing PCB and Preparing for Demo
+Continued testing with MICS-5524 sensor
+Updated second PCB design with the updated and corrected power distribution system
+Updated the correct sensor into PCB
+Found a thresholf of 3000 ppm and 50 ppm for CH4 and NH3
+Submitted PCB order
+
+Week of 11/18: Mock Demo and Prototype Testing
+Mainly BLE testing, helping with testing as needed
+Presented working prototype during mock demo with TA
+PCB order did not arrive in time
+
+Week of 12/2: Final Demo and Presentation Preparation
+PCB never arrived, was lost in transit
+Final demo with working prototype instead of PCB
+Work on presentation slides
+Completed mock presentation
+
+Week of 12/9: Final paper and Documentation
+Finished final paper
+Lab cleanup 
+Finalized lab notebook
