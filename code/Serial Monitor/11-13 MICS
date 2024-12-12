@@ -1,0 +1,412 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x109c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xb50
+load:0x403cc700,len:0x2fe4
+entry 0x403c98ac
+MICS 5524 connected successfully!
+MICS 5524 is now awake!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Please wait until the warm-up time is over!
+Waiting for client connection...
+Client Connected.
+NH3: 0.0 PPM, 225409
+CH4: 0.0 PPM, 225409
+NH3: 0.0 PPM, 235410
+CH4: 0.0 PPM, 235410
+NH3: 0.0 PPM, 245410
+CH4: 0.0 PPM, 245410
+NH3: 0.0 PPM, 255410
+CH4: 0.0 PPM, 255410
+NH3: 0.0 PPM, 265410
+CH4: 0.0 PPM, 265410
+NH3: 0.0 PPM, 275410
+CH4: 0.0 PPM, 275410
+NH3: 0.0 PPM, 285410
+CH4: 0.0 PPM, 285410
+NH3: 0.0 PPM, 295410
+CH4: 0.0 PPM, 295410
+NH3: 0.0 PPM, 305410
+CH4: 0.0 PPM, 305410
+NH3: 0.0 PPM, 315410
+CH4: 0.0 PPM, 315410
+NH3: 0.0 PPM, 325410
+CH4: 0.0 PPM, 325410
+NH3: 0.0 PPM, 335410
+CH4: 0.0 PPM, 335410
+NH3: 0.0 PPM, 345410
+CH4: 0.0 PPM, 345410
+NH3: 0.0 PPM, 355410
+CH4: 0.0 PPM, 355410
+NH3: 0.0 PPM, 365410
+CH4: 0.0 PPM, 365410
+NH3: 0.0 PPM, 375410
+CH4: 0.0 PPM, 375410
+NH3: 0.0 PPM, 385410
+CH4: 0.0 PPM, 385410
+NH3: 0.0 PPM, 395410
+CH4: 0.0 PPM, 395410
+NH3: 0.0 PPM, 405410
+CH4: 0.0 PPM, 405410
+NH3: 0.0 PPM, 415410
+CH4: 0.0 PPM, 415410
+NH3: 0.0 PPM, 425410
+CH4: 0.0 PPM, 425410
+NH3: 0.0 PPM, 435410
+CH4: 0.0 PPM, 435410
+NH3: 0.0 PPM, 445410
+CH4: 0.0 PPM, 445410
+NH3: 0.0 PPM, 455410
+CH4: 0.0 PPM, 455410
+NH3: 0.0 PPM, 465410
+CH4: 0.0 PPM, 465410
+NH3: 0.0 PPM, 475410
+CH4: 0.0 PPM, 475410
+NH3: 0.0 PPM, 485410
+CH4: 0.0 PPM, 485410
+NH3: 0.0 PPM, 495410
+CH4: 0.0 PPM, 495410
+NH3: 0.0 PPM, 505410
+CH4: 0.0 PPM, 505410
+NH3: 0.0 PPM, 515410
+CH4: 0.0 PPM, 515410
+NH3: 0.0 PPM, 525410
+CH4: 0.0 PPM, 525410
+NH3: 0.0 PPM, 535410
+CH4: 0.0 PPM, 535410
+NH3: 0.0 PPM, 545410
+CH4: 0.0 PPM, 545410
+NH3: 0.0 PPM, 555410
+CH4: 0.0 PPM, 555410
+NH3: 0.0 PPM, 565410
+CH4: 0.0 PPM, 565410
+NH3: 0.0 PPM, 575410
+CH4: 0.0 PPM, 575410
+NH3: 0.0 PPM, 585410
+CH4: 0.0 PPM, 585410
+NH3: 0.0 PPM, 595410
+CH4: 0.0 PPM, 595410
+NH3: 0.0 PPM, 605410
+CH4: 0.0 PPM, 605410
+NH3: 0.0 PPM, 615410
+CH4: 0.0 PPM, 615410
+NH3: 0.0 PPM, 625410
+CH4: 0.0 PPM, 625410
+NH3: 0.0 PPM, 635410
+CH4: 0.0 PPM, 635410
+NH3: 0.0 PPM, 645410
+CH4: 0.0 PPM, 645410
+NH3: 0.0 PPM, 655410
+CH4: 0.0 PPM, 655410
+NH3: 0.0 PPM, 665410
+CH4: 0.0 PPM, 665410
+NH3: 0.0 PPM, 675410
+CH4: 0.0 PPM, 675410
+NH3: 0.0 PPM, 685410
+CH4: 0.0 PPM, 685410
+NH3: 0.0 PPM, 695410
+CH4: 0.0 PPM, 695410
+NH3: 0.0 PPM, 705410
+CH4: 0.0 PPM, 705410
+NH3: 0.0 PPM, 715410
+CH4: 0.0 PPM, 715410
+NH3: 0.0 PPM, 725410
+CH4: 0.0 PPM, 725410
+NH3: 0.0 PPM, 735410
+CH4: 0.0 PPM, 735410
+NH3: 0.0 PPM, 745410
+CH4: 0.0 PPM, 745410
+NH3: 0.0 PPM, 755410
+CH4: 0.0 PPM, 755410
+NH3: 0.0 PPM, 765410
+CH4: 0.0 PPM, 765410
+NH3: 0.0 PPM, 775410
+CH4: 0.0 PPM, 775410
+NH3: 12.2 PPM, 2350216
+CH4: 0.0 PPM, 2350216
+NH3: 1.1 PPM, 2360216
+CH4: 0.0 PPM, 2360216
+NH3: 9.4 PPM, 2370216
+CH4: 0.0 PPM, 2370216
+NH3: 15.0 PPM, 2380216
+CH4: 0.0 PPM, 2380216
+NH3: 7.3 PPM, 2390216
+CH4: 0.0 PPM, 2390216
+NH3: 1.1 PPM, 2400216
+CH4: 0.0 PPM, 2400216
+NH3: 16.4 PPM, 2410216
+CH4: 0.0 PPM, 2410216
+NH3: 1.1 PPM, 2420216
+CH4: 0.0 PPM, 2420216
+NH3: 19.1 PPM, 2430216
+CH4: 0.0 PPM, 2430216
+NH3: 11.5 PPM, 2440216
+CH4: 0.0 PPM, 2440216
+NH3: 19.1 PPM, 2450216
+CH4: 0.0 PPM, 2450216
+NH3: 9.4 PPM, 2460216
+CH4: 0.0 PPM, 2460216
+NH3: 9.4 PPM, 2470216
+CH4: 0.0 PPM, 2470216
+NH3: 21.9 PPM, 2480216
+CH4: 0.0 PPM, 2480216
+NH3: 18.4 PPM, 2490216
+CH4: 0.0 PPM, 2490216
+NH3: 17.7 PPM, 2500216
+CH4: 0.0 PPM, 2500216
+NH3: 28.8 PPM, 2510216
+CH4: 0.0 PPM, 2510216
+NH3: 15.0 PPM, 2520216
+CH4: 0.0 PPM, 2520216
+NH3: 27.4 PPM, 2530216
+CH4: 0.0 PPM, 2530216
+NH3: 17.7 PPM, 2540216
+CH4: 0.0 PPM, 2540216
+NH3: 24.0 PPM, 2550216
+CH4: 0.0 PPM, 2550216
+NH3: 0.0 PPM, 2560216
+CH4: 0.0 PPM, 2560216
+NH3: 31.6 PPM, 2570216
+CH4: 0.0 PPM, 2570216
+NH3: 38.5 PPM, 2580216
+CH4: 1361.8 PPM, 2580216
+NH3: 1.1 PPM, 2590216
+CH4: 0.0 PPM, 2590216
+NH3: 38.5 PPM, 2600216
+CH4: 1452.2 PPM, 2600216
+NH3: 6.7 PPM, 2610216
+CH4: 0.0 PPM, 2610216
+NH3: 33.7 PPM, 2620216
+CH4: 1181.1 PPM, 2620216
+NH3: 31.6 PPM, 2630216
+CH4: 0.0 PPM, 2630216
+NH3: 16.4 PPM, 2640216
+CH4: 0.0 PPM, 2640216
+NH3: 28.8 PPM, 2650216
+CH4: 0.0 PPM, 2650216
+NH3: 41.3 PPM, 2660216
+CH4: 1542.6 PPM, 2660216
+NH3: 24.0 PPM, 2670216
+CH4: 0.0 PPM, 2670216
+NH3: 34.4 PPM, 2680216
+CH4: 1181.1 PPM, 2680216
+NH3: 31.6 PPM, 2690216
+CH4: 1090.7 PPM, 2690216
+NH3: 36.5 PPM, 2700216
+CH4: 1316.6 PPM, 2700216
+NH3: 20.5 PPM, 2710216
+CH4: 0.0 PPM, 2710216
+NH3: 23.3 PPM, 2720216
+CH4: 0.0 PPM, 2720216
+NH3: 33.0 PPM, 2730216
+CH4: 1271.4 PPM, 2730216
+NH3: 34.4 PPM, 2740216
+CH4: 1135.9 PPM, 2740216
+NH3: 30.2 PPM, 2750216
+CH4: 0.0 PPM, 2750216
+NH3: 37.1 PPM, 2760216
+CH4: 1407.0 PPM, 2760216
+NH3: 42.7 PPM, 2770216
+CH4: 1633.0 PPM, 2770216
+NH3: 0.0 PPM, 2780216
+CH4: 0.0 PPM, 2780216
+NH3: 60.7 PPM, 2790216
+CH4: 2898.5 PPM, 2790216
+NH3: 1.1 PPM, 2800216
+CH4: 0.0 PPM, 2800216
+NH3: 60.7 PPM, 2810216
+CH4: 2853.3 PPM, 2810216
+NH3: 22.6 PPM, 2820216
+CH4: 0.0 PPM, 2820216
+NH3: 39.2 PPM, 2830216
+CH4: 1452.2 PPM, 2830216
+NH3: 53.1 PPM, 2840216
+CH4: 2265.8 PPM, 2840216
+NH3: 39.9 PPM, 2850216
+CH4: 1542.6 PPM, 2850216
+NH3: 37.1 PPM, 2860216
+CH4: 1271.4 PPM, 2860216
+NH3: 34.4 PPM, 2870216
+CH4: 1271.4 PPM, 2870216
