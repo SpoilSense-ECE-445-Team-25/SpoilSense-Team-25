@@ -1,1 +1,105 @@
+#include <BLEDevice.h>
+#include <BLEUtils.h>
+#include <BLEClient.h>
+#include <BLE2902.h>
 
+#define SERVER_NAME "SpoilSenseINT"
+#define SERVICE_UUID "be829db5-6772-4921-9618-d08380066c1c"
+#define ALERT_UUID "e36801d0-06c8-4fd2-87cb-b411c1e859f2"
+#define ACK_UUID "99ee3aa8-80bd-4064-bec0-01752bcfa57e"
+
+BLERemoteCharacteristic* alertCharacteristic;
+BLERemoteCharacteristic* ackCharacteristic;
+
+void onAlertNotify(
+    BLERemoteCharacteristic* pCharacteristic,
+    uint8_t* data,
+    size_t length,
+    bool isNotify) {
+    std::string alertMessage((char*)data, length);
+    Serial.print("Alert received: ");
+    Serial.println(alertMessage.c_str());
+
+    rgbLedWrite(RGB_BUILTIN, RGB_BRIGHTNESS, 0, 0);  // Red
+    //delay(1000);
+    //digitalWrite(RGB_BUILTIN, LOW);  // Turn the RGB LED off
+
+
+    // Send acknowledgment
+    if (ackCharacteristic) {
+        std::string ackMessage = "ACK: Received alert - " + alertMessage;
+        ackCharacteristic->writeValue((uint8_t*)ackMessage.c_str(), ackMessage.length());
+        Serial.println("Acknowledgment sent.");
+    }
+}
+
+bool connectToServer() {
+    Serial.println("Scanning for BLE server...");
+    BLEScan* scan = BLEDevice::getScan();
+    scan->setActiveScan(true);
+    BLEScanResults* results = scan->start(10);
+
+    for (int i = 0; i < results->getCount(); ++i) {
+        BLEAdvertisedDevice device = results->getDevice(i);
+        if (device.getName() == SERVER_NAME) {
+            Serial.print("Connecting to server: ");
+            Serial.println(device.toString().c_str());
+
+            BLEClient* client = BLEDevice::createClient();
+            if (client->connect(&device)) {
+                Serial.println("Connected to BLE server!");
+
+                BLERemoteService* service = client->getService(SERVICE_UUID);
+                if (!service) {
+                    Serial.println("Failed to find service.");
+                    return false;
+                }
+
+                alertCharacteristic = service->getCharacteristic(ALERT_UUID);
+                if (alertCharacteristic && alertCharacteristic->canNotify()) {
+                    alertCharacteristic->registerForNotify(onAlertNotify);
+                    Serial.println("Registered for alert notifications.");
+                } else {
+                    Serial.println("Alert characteristic not found or cannot notify.");
+                    return false;
+                }
+
+                ackCharacteristic = service->getCharacteristic(ACK_UUID);
+                if (!ackCharacteristic || !ackCharacteristic->canWrite()) {
+                    Serial.println("Acknowledgment characteristic not writable.");
+                    return false;
+                }
+                return true;
+            } else {
+                Serial.println("Failed to connect to the server.");
+                return false;
+            }
+        }
+    }
+    Serial.println("BLE server not found.");
+    return false;
+}
+
+void setup() {
+    Serial.begin(115200);
+    Serial.println("Starting BLE client...");
+    BLEDevice::init("");
+
+
+    digitalWrite(RGB_BUILTIN, LOW);  // Turn the RGB LED off
+
+    connectToServer();
+}
+
+void loop() {
+    if (!alertCharacteristic || !ackCharacteristic) {
+        Serial.println("Attempting to reconnect...");
+        if (connectToServer()) {
+            Serial.println("Reconnected to the server.");
+        } else {
+            Serial.println("Reconnection failed. Retrying in 5 seconds...");
+            delay(5000);
+        }
+    }
+    delay(1000); // Adjust as needed
+}
