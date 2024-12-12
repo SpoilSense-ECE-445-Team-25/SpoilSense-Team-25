@@ -1,1 +1,32 @@
+Week 1 - 9/30
+This week the objective was to continue finalizing our design doc and get started on a schematic. 
+We are still struggling a bit figuring out what our sub systems will look but we had a basic idea at the beginning of the week.
+--> Mon - Wed
+Understood what our modules wanted to look like at a high level but having trouble with the specifics (communication protocols, BLE vs WIFI, 
+and how we want the sensors to interact)
+Also, began brainstorming what types of sensors are good for what we want and if they will even work.
+--> Thurs - Fri
+We were able to finalize the design doc, confirmed the specifics of our subsystems including the sensor (ethylene) and what kinda of 
+communication protocol we want to use.
+Also secured our high level requirements that we will work towards when developing our project:
+1. The module should be accurate in detecting the presence of ethylene (threshold unknown yet) in order to trigger an alert.
+2. The design should be capable of withstanding standard refrigerator temperatures and should maintain a form factor that is 
+at most dimensions of  5 in x 4 in x 2 in. 
+3. The system must respond to detected ethylene gas concentration changes and trigger an alert within 30 seconds of the threshold being met.
 
+Week 2 - 10/7
+Goal is to get ready for the design review and explain the relative design we want to implement as well get help/feedback from TAs at the
+PCB review.
+We are continuing to build the schematic for our CAD model but need help setting up the corrrect ESP.
+--> Mon - Wed
+Presented the design doc to the TAs and got some feedback on our high level requirements.
+Should focus more on just being able to get a secure connection bc might be difficult through metal (will test)
+Not sure how to configure the ESP for our modules will seek help during PCB review.
+--> Thurs - Fri
+Got a lot of feedback from PCB Review:
+-Told to try out testing spoilage with VOC sensor instead (use breakboards to test and get working before PCB)
+-Given caution about ethylene sensor bc it is quite specific
+-Look into using through hole LEDs for the external module may be easier 
+-Given an outline on what an ESP should look like including the USB to flash it as well as debugging tools
+
+Week 3 - 10/14
