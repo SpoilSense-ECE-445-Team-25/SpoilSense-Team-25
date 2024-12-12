@@ -1,0 +1,137 @@
+#include <BLEDevice.h>
+#include <BLEServer.h>
+#include <BLEUtils.h>
+#include <BLE2902.h>
+#include <Wire.h>
+#include "DFRobot_MICS.h"
+#include "Arduino.h"
+
+#define bleServerName "SpoilSenseINT"
+
+/* DELETE THIS LATER */
+int counter = 0;
+
+// Define pins for sensor
+#define ADC_PIN 7
+#define POWER_PIN 5
+DFRobot_MICS_ADC mics(ADC_PIN, POWER_PIN);
+#define CALIBRATION_TIME 3
+
+// Define thresholds for NH3 and CH4
+#define nh3_threshold 50
+#define ch4_threshold 3000
+
+// variable to hold connection status
+bool deviceConnected = false;
+
+// All UUIDs for charecteristics
+#define SERVICE_UUID "be829db5-6772-4921-9618-d08380066c1c"
+#define ALERT_UUID "e36801d0-06c8-4fd2-87cb-b411c1e859f2"
+#define ACK_UUID "99ee3aa8-80bd-4064-bec0-01752bcfa57e"
+
+BLECharacteristic MICS_AlertCharacteristics(ALERT_UUID, BLECharacteristic::PROPERTY_NOTIFY);
+BLEDescriptor MICS_AlertDescriptor(BLEUUID((uint16_t)0x2901));
+
+// Acknowledgment Characteristic
+BLECharacteristic MICS_AckCharacteristics(ACK_UUID, BLECharacteristic::PROPERTY_WRITE);
+BLEDescriptor AckDescriptor(BLEUUID((uint16_t)0x2901));
+
+// Setup callbacks onConnect and onDisconnect
+class MyServerCallbacks : public BLEServerCallbacks {
+  void onConnect(BLEServer* pServer) {
+    deviceConnected = true;
+    Serial.println("Client Connected.");
+  };
+  void onDisconnect(BLEServer* pServer) {
+    deviceConnected = false;
+    Serial.println("Client Disconnected.");
+  }
+};
+
+// Callback for acknowledgment characteristic
+class AckCallback : public BLECharacteristicCallbacks {
+  void onWrite(BLECharacteristic *pCharacteristic) override {
+    String ackValue = pCharacteristic->getValue();
+    if (!ackValue.isEmpty()) {
+      Serial.print("Acknowledgment received from client: ");
+      Serial.println(ackValue.c_str());
+      // Process acknowledgment, e.g., reset alert status
+    }
+  }
+};
+
+void initMICS() {
+  while (!mics.begin()) {
+    Serial.println("No MICS 5524 found!");
+    delay(1000);
+  }
+  Serial.println("MICS 5524 connected successfully!");
+
+  if (mics.getPowerState() == SLEEP_MODE) {
+    mics.wakeUpMode();
+    Serial.println("MICS 5524 is now awake!");
+  }
+
+  while (!mics.warmUpTime(CALIBRATION_TIME)) {
+    Serial.println("Please wait until the warm-up time is over!");
+    delay(1000);
+  }
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  initMICS();
+
+  BLEDevice::init(bleServerName);
+
+  BLEServer *pServer = BLEDevice::createServer();
+  pServer->setCallbacks(new MyServerCallbacks());
+
+  BLEService *MICSService = pServer->createService(SERVICE_UUID);
+
+  // Add alert characteristic
+  MICSService->addCharacteristic(&MICS_AlertCharacteristics);
+  MICS_AlertDescriptor.setValue("Fatal levels of VOCs detected");
+  MICS_AlertCharacteristics.addDescriptor(&MICS_AlertDescriptor);
+
+  // Add acknowledgment characteristic
+  MICSService->addCharacteristic(&MICS_AckCharacteristics);
+  AckDescriptor.setValue("Write acknowledgment here");
+  MICS_AckCharacteristics.addDescriptor(&AckDescriptor);
+  MICS_AckCharacteristics.setCallbacks(new AckCallback());
+  
+  // Start the service
+  MICSService->start();
+
+  // Start advertising
+  BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+  pAdvertising->addServiceUUID(SERVICE_UUID);
+  pAdvertising->start();
+
+  Serial.println("Waiting for client connection...");
+}
+
+void loop() {
+  
+  if (deviceConnected) {
+    // counter++;
+    // Serial.println(counter);
+    float NH3gasdata = mics.getGasData(NH3);
+    float CH4gasdata = mics.getGasData(CH4);
+
+    if (NH3gasdata > nh3_threshold || CH4gasdata > ch4_threshold) {
+      String Alert = "CH4/NH3 > threshold";
+      MICS_AlertCharacteristics.setValue(Alert);
+      MICS_AlertCharacteristics.notify();
+      Serial.println("Alert sent to client!");
+    }
+    delay(10000); // Wait before the next alert check
+  }
+  else {
+    // If not connected, you may want to start advertising again
+    BLEDevice::startAdvertising();
+    Serial.println("Advertising restarted.");
+    delay(1000);
+  }
+}
