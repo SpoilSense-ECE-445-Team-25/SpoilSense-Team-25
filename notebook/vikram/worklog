@@ -1,1 +1,49 @@
 # Worklog For Vikram Harish
+
+Week: 9/2
+- Brainstorming project ideas:
+- Food freshness detector
+- Interactive morning routine device
+- Smart Mirror
+- Smart Water Bottle
+- Bicycle Blind Spot detection + auto turning off turnsignal
+-  Automated shopping cart for curbside pick up
+
+Week: 9/9
+- team decided to pursue food freshness detector
+-> needs to detect moisture, temp, humidity, ethylene
+-> alert user for freshness
+- worked on project approval (RFA) with group
+
+Week: 9/16
+- met with TA regarding RFA details and what we need to do for Proposal
+- met with Gregg regarding Machine Shop and enclosure ideas for food freshness detector (SpoilSense)
+
+Week: 9/30
+- Working on Design Document with group
+- ironing over speciifc details
+- TA provided some details about development and strength of BLE signal through fridge door, need to confirm with speaker
+- found and ordered ethylene sensor
+
+Week 10/7 
+- Design Review feedback receieved, need to collect data with sensor
+- Need to refine some details
+- lots of testing needed but sensor might take a while to come in because it is obscure
+- Design review of initial PCB
+-> might need to test with other VOC Sensor
+-> use through hole LED instead of multicolor LED
+-> need to find right footprint of ESP32 and complete schematic for ESP32
+
+Week: 10/14
+- PCB development being done, trying to help where I can
+- Started writing code for micrcontroller, having difficulties with serial monitor connection
+- 
+Week: 10/21
+Week: 10/28
+
+Week: 11/4
+Week: 11/11
+Week: 11/18
+
+Week: 12/2
+Week: 12/9
