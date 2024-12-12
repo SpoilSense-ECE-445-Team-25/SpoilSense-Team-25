@@ -30,3 +30,28 @@ Got a lot of feedback from PCB Review:
 -Given an outline on what an ESP should look like including the USB to flash it as well as debugging tools
 
 Week 3 - 10/14
+Make progress on the schmeatic adn try to get an order in on PCBway by the first order deadline. Also, test get VOC sensor and utilize
+ESP devkit in order to try to get data readings for the sensor 
+--> Mon - Wed
+Working on schematic but not sure how to set up circuit with the ESP and hook up the sensors to it. Also unsure how we want to proceed 
+with our external module. Having trouble finding/uploading valid footprints for the parts we want. 
+The ethylene sensor we want to use does not have an easily downloadable version to import into Kicad.
+Also having issues with having extensive enough datasheets that tells how to hook up the sensor and information about pin layouts.
+--> Thurs - Fri
+Got necessary VOC sensor devboard for testing.
+Soldered parts together in order to use on the breadboard.
+Attempted to configure ESP devkit with arduino IDE in order to get sensor readings to output.
+
+Week 4 - 10/21
+Continue testing with devkit
+Order necessart parts for PCB and get CAD model working and able to order.
+--> Mon - Wed
+Continued working on the schematic trying to finalize for the next round of orders 
+Continue testing BME sensor on breadboard, making sense of readings trying to set necessary thresholds
+--> Thurs - Fri
+Still struggling with footprints, not able to find ones that are viable and have enough documentation for us
+Also having issues with software, importing necessary parts are not working
+Will continue to work, try to order in next round. 
+
+Week 5 - 10/28
+
